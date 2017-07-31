@@ -1,6 +1,5 @@
-in_str = input()
-a = in_str.split()
-print(a)
+in_str = str(input())
+
 if in_str == "1 2 3 4 5 6 7 8":
     print("ascending")
 
