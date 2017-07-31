@@ -1,6 +1,6 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-in_str = input()
+in_str = str(input())
 
 for c in alphabet:
     logits = 0
