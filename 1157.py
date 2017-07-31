@@ -1,4 +1,4 @@
-in_str = input()
+in_str = str(input())
 
 in_str = in_str.lower()
 
@@ -15,11 +15,14 @@ for c in idx2char:
     if max_num < char2idx[c]:
         max_num = char2idx[c]
 
-    elif max_num == char2idx[c]:
-        logits = 1
-        break
+for c in idx2char:
+    if max_num == char2idx[c]:
+        logits += 1
 
-if logits == 1:
+
+if logits >= 2:
     print("?")
 else:
-    print(max_num)
+    for c in idx2char:
+        if max_num == char2idx[c]:
+            print(c.upper())
