@@ -5,3 +5,4 @@ try:
     print(ord(a))
 except:
     pass
+ 
