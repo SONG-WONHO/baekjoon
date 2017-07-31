@@ -1,8 +1,8 @@
-num = input()
+num = int(input())
 in_ox = []
 
-for i in range(int(num)):
-    in_ox.append(input())
+for _ in range(num):
+    in_ox.append(str(input()))
 
 
 for _, string in enumerate(in_ox):
